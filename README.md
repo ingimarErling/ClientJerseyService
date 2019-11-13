@@ -4,6 +4,11 @@ Client only for the RESTfulServerClient-repo
 ## Client for this project
 https://github.com/ingimarErling/RESTfulServerClient
 
+## tested files
+
+1. 2GB works
+2. 3GB works
+
 
 ## running in Netbeans
 
