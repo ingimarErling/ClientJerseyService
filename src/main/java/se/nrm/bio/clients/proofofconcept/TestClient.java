@@ -52,7 +52,8 @@ public class TestClient {
 
     private HttpResponse testing() throws FileNotFoundException, IOException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        String fileName = "testbild-svt-666.png";
+//        String fileName = "testbild-svt-666.png";
+        String fileName = "2GB.zip";
         String filePath = "/tmp/".concat(fileName);
         HttpEntity entity = MultipartEntityBuilder.create().addTextBody("owner", "ingimar")
                 .addTextBody("fileName", fileName).addTextBody("workgroupId", "XXX").addBinaryBody("content", new File(filePath)).build();
