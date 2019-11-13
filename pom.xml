@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>se.nrm.bio.mediaserver</groupId>
+    <groupId>se.nrm.bio.clients</groupId>
     <artifactId>Client</artifactId>
     <version>9.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    
     <name>00-Client</name>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <jdk.version>1.8</jdk.version>
+
         <jersey2.version>2.19</jersey2.version>
         <jaxrs.version>2.0.1</jaxrs.version>
     </properties>
+    
     <dependencies>
              
         <dependency>
@@ -116,13 +121,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <!--<version>3.2.0</version>-->
                 <configuration>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- Jar file entry point -->
-                            <!--<mainClass>se.nrm.bio.mediaserver.testing.base64.NewClientEncodePost</mainClass>-->
-                            <mainClass>se.nrm.bio.mediaserver.testing.base64.NewClientEncodeGuavaPost</mainClass>
+                            <mainClass>se.nrm.bio.clients.proofofconcept.TestClient</mainClass>
                             <classpathPrefix>dependency-jars/</classpathPrefix>
                         </manifest>
                     </archive>
