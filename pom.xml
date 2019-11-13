@@ -116,7 +116,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            
+
             <!-- Make this jar executable -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
